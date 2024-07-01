@@ -2,9 +2,28 @@
 <html>
 <head>
     <title>Restaurant Recommendation Website</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        #restaurant-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        #restaurant-list li {
+            border-bottom: 1px solid #ddd;
+            padding: 10px 0;
+        }
+    </style>
 </head>
 <body>
     <h1>Welcome to the Restaurant Recommendation Website</h1>
-    <p>This is a simple website hosted on GitHub Pages.</p>
+    <p>Click the button to find restaurants near you:</p>
+    <button onclick="getLocation()">Find Restaurants</button>
+    <ul id="restaurant-list"></ul>
+
+    <script src="script.js"></script>
 </body>
 </html>
